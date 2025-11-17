@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Jean-Claude Niyo Magugu",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://x.com/JClaude_magugu/photo",
+      "sha256": "78ba3c4ae147afaf6ab052c7eac4cfa5be92f4b2d669d49aa3a4e1bc6a5ae9f6"
+    },
+    "motivations": "\nITC Analyst, Community Manager\nPassionate about technology, particularly Web3 and blockchain, I am primarily motivated by Cardano's decentralized governance model, which I want to participate in by helping the community I represent to better understand and choose Cardano as their primary blockchain.  My proven experience as a web3 community mobilization supervisor with similar tasks equips me well to become a representative delegate.\n",
+    "objectives": "My goal in becoming a DRep is to lead my community and help them understand governance actions so that they can make informed decisions about the ecosystem.",
+    "paymentAddress": "addr_test1qzktz23dsj4q66jvcuy7dqqvpxx294hjvml7u7fterrz3jnrys2hlm9m6tyya6khqqvclqepke7jasdpzdcqcgskhf3s8km07f",
+    "qualifications": "Project manager, Junior Fullstack Dev, Community Manager \nLogistician and ITC analyst \nA have a Bachelor's degree in Biology with 5 years of experience in information management, technology and communication, marketing, Web3 pioneer and trainer. Member of the Cardano ecosystem, ADA holder and participant in several governance actions, I therefore have a good understanding of governance actions that I wish to put into practice and lead my community to make good decisions about the ecosystem and their assets. \n",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "LinkedIn",
+        "uri": "https://www.linkedin.com/in/jean-claude-niyo-magugu/"
+      },
+      {
+        "@type": "Identity",
+        "label": "X",
+        "uri": "https://x.com/JClaude_magugu"
+      }
+    ]
+  }
+}
